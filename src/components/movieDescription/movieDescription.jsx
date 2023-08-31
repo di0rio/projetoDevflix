@@ -45,7 +45,7 @@ const MovieDesc = ({ movies, click }) => {
             </div>
           </div>
         </div>
-        <div className={styles.containerMisc}>
+        {/* <div className={styles.containerMisc}>
           <div className={styles.containerFlex}>
             Avaliação: {movie.imdbRating} | duração: {movie.Runtime} |{" "}
             {movie.Year}
@@ -54,7 +54,7 @@ const MovieDesc = ({ movies, click }) => {
             <p>Elenco: {movie.Actors}</p>
             <p>Gêneros: {movie.Genre}</p>
           </div>
-        </div>
+        </div> */}
         <div className={styles.desc}>
           <p>Sinopse: {movie.Plot}</p>
         </div>

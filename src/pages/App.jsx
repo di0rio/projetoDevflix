@@ -4,8 +4,8 @@ import "./App.css";
 import MovieCard from "../components/movieCard/movieCard";
 import Footer from "../components/footer/footer";
 
-import logo from "../assets/devflix.png";
-import searchIcon from "../assets/search.svg";
+import logo from "../assets/devflixLogo2.png";
+import searchIcon from "../assets/Vector.svg";
 
 const App = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -32,26 +32,37 @@ const App = () => {
 
   return (
     <div id="app">
-      <div className="logo">
-        <img src={logo} alt="Logo devflix" />
-      </div>
-      <div className="search">
-        <input
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-          onKeyDown={handleKeyPress}
-          placeholder="Pesquise por filmes"
-        />
-        <img
-          src={searchIcon}
-          alt="Icone de pesquisa"
-          onClick={() => searchMovies(searchTerm)}
-        />
-      </div>
+      <div className="menuHead">
+        <div className="logo"> 
+          <img src={logo} alt="Logo devflix" />
+          </div>
+          <div className="as">
+            <a href="">inicio</a>
+            <a href="">filmes</a>
+            <a href="">series</a>
+          </div>
+          <div className="search">
+            <input
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              onKeyDown={handleKeyPress}
+              placeholder=""
+            />
+
+            <div className="search-icon-container">
+              <img
+                src={searchIcon}
+                alt="Icone de pesquisa"
+                onClick={() => searchMovies(searchTerm)}
+              />
+            </div>
+          </div>
+        </div>
+      
       {movies?.length > 0 ? (
         <div className="container">
           {movies.map((movie) => (
-            <MovieCard key={movie.imdbID} movies={movie}/>
+            <MovieCard key={movie.imdbID} movies={movie} />
           ))}
         </div>
       ) : (
@@ -59,7 +70,7 @@ const App = () => {
           <h2>Nenhum filme encontrado 😥</h2>
         </div>
       )}
-      <Footer link={"https://github.com/di0rio"}>di0rio</Footer>
+      <Footer link={"#"}> </Footer>
     </div>
   );
 };

@@ -3,8 +3,9 @@
 } */
 
 .movie {
-  width: 310px;
-  height: 460px;
+  width: 290px;
+  height: 321px;
+  flex-shrink: 0;
   margin: 1.5rem;
   position: relative;
   overflow: hidden;
