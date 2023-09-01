@@ -32,9 +32,9 @@ const App = () => {
 
   return (
     <div id="app">
-      <div id="logoSumisso">
+      {/* <div id="logoSumisso">
         <img src="src/assets/devflixLogo2.png" alt="Logo devflix azul com sombra nas letras" />
-      </div>
+      </div> */}
       <div className="menuHead">
         <div className="logo"> 
           <img src={logo} alt="Logo devflix azul com sombra nas letras" />

@@ -20,7 +20,7 @@ body {
   overflow-x: hidden;
 }
 
-#logoSumisso {
+/* #logoSumisso {
   position: absolute;
   display: flex;
   width: 1920px;
@@ -34,7 +34,7 @@ body {
   z-index: 1000;
   animation: fade-out 2.7s linear forwards;
   background-color: #1c2c35;
-}
+} */
 
 /* #logoSumisso img,
 #logoSumisso .outros-itens {
