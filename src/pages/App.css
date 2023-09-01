@@ -36,7 +36,7 @@ body {
   background-color: #1c2c35;
 }
 
-#logoSumisso img,
+/* #logoSumisso img,
 #logoSumisso .outros-itens {
   opacity: 1;
   transition: opacity 2.3s ease-in;
@@ -47,7 +47,7 @@ body {
 #logoSumisso.fade-out .outros-itens {
   opacity: 0;
   background-color: #1c2c35;
-}
+} */
 
 #app {
   padding: 4em;
