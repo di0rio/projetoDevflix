@@ -10,14 +10,15 @@ import "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js";
 const Footer = ({ children, link }) => {
   return (
     <footer>
-      <p> {""}{" "}
+      <p>
+        Feito com <ion-icon name="heart" /> por {""}{" "}
         <a href={link} target="_blank">
           {children}
         </a>
-      </p>
-      <SocialLinks icon={"logo-twitter"} href={"#"} />
-      <SocialLinks icon={"logo-instagram"} href={"#"} />
-      <SocialLinks icon={"logo-facebook"} href={"#"} />
+        </p>
+      <SocialLinks icon={"logo-github"} href={"https://github.com/di0rio"} />
+      <SocialLinks icon={"logo-instagram"} href={"https://www.instagram.com/di0riocaua/"} />
+      <SocialLinks icon={"logo-twitter"} href={"https://twitter.com/DiorioCaua"} />
     </footer>
   );
 };

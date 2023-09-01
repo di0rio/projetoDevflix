@@ -110,6 +110,7 @@ body {
 
 a {
 transition: 0.3s;
+font-size: 1.1em;
 }
 
 a:hover{

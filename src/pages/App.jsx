@@ -70,7 +70,7 @@ const App = () => {
           <h2>Nenhum filme encontrado 😥</h2>
         </div>
       )}
-      <Footer link={"#"}> </Footer>
+      <Footer link={"https://github.com/di0rio"}>di0rio</Footer>
     </div>
   );
 };

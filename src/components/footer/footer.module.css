@@ -1,18 +1,16 @@
 footer {
   text-align: center;
   font-size: 20px;
-  padding: 0;
+  padding: 24px;
   font-weight: bolder;
   color: #fff;
-  width: 1920px;
-  height: 206px;
-
 }
 
 footer a {
   text-decoration: none;
   color: #fff;
 }
+
 footer p ion-icon {
   color: #ff0000;
 }
