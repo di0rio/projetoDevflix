@@ -36,15 +36,13 @@ body {
   background-color: #1c2c35;
 }
 
-#logoSumisso img,
-#logoSumisso .outros-itens {
+#logoSumisso img {
   opacity: 1;
   transition: opacity 0.4s ease-in;
   background-color: #1c2c35;
 }
 
-#logoSumisso.fade-out img,
-#logoSumisso.fade-out .outros-itens {
+#logoSumisso.fade-out img {
   opacity: 0;
   background-color: #1c2c35;
 }
