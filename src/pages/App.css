@@ -27,18 +27,18 @@ body {
   transform: translate(-50%, -50%);
   z-index: 1000;
   animation: fade-out 2s linear forwards;
-  background: #1c2c35;
+  background-color: #1c2c35;
 }
 
-#logoSumisso img,
-#logoSumisso .outros-itens {
+#logoSumisso img, #logoSumisso .outros-itens {
   opacity: 1;
   transition: opacity 2s ease-in;
+  background-color: #1c2c35;
 }
 
-#logoSumisso.fade-out img,
-#logoSumisso.fade-out .outros-itens {
+#logoSumisso.fade-out img, #logoSumisso.fade-out .outros-itens {
   opacity: 0;
+  background-color: #1c2c35;
 }
 
 #app {
@@ -56,7 +56,6 @@ body {
 .logo img {
   width: 407px;
   height: 89px;
-  flex-shrink: 0;
 }
 
 .as {
