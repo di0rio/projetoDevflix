@@ -2,7 +2,7 @@ import { useState } from "react";
 import MovieDesc from "../movieDescription/movieDescription";
 import styles from "./movieCard.module.css";
 
-const MovieCard = ({ movies }) => {
+const MovieCard = ({ movies, }) => {
   const movie = movies;
   const [isModalOpen, setIsModalOpen] = useState(false);
 
