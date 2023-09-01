@@ -32,36 +32,36 @@ const App = () => {
 
   return (
     <div id="app">
-      {/* <div id="logoSumisso">
+      <div id="logoSumisso">
         <img src="src/assets/devflixLogo2.png" alt="Logo devflix azul com sombra nas letras" />
-      </div> */}
+      </div>
       <div className="menuHead">
-        <div className="logo"> 
+        <div className="logo">
           <img src={logo} alt="Logo devflix azul com sombra nas letras" />
-          </div>
-          <div className="as">
-            <a href="#">inicio</a>
-            <a href="#">filmes</a>
-            <a href="#">series</a>
-          </div>
-          <div className="search">
-            <input
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-              onKeyDown={handleKeyPress}
-              placeholder=""
-            />
+        </div>
+        <div className="as">
+          <a href="#">inicio</a>
+          <a href="#">filmes</a>
+          <a href="#">series</a>
+        </div>
+        <div className="search">
+          <input
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            onKeyDown={handleKeyPress}
+            placeholder=""
+          />
 
-            <div className="search-icon-container">
-              <img
-                src={searchIcon}
-                alt="Icone de pesquisa"
-                onClick={() => searchMovies(searchTerm)}
-              />
-            </div>
+          <div className="search-icon-container">
+            <img
+              src={searchIcon}
+              alt="Icone de pesquisa"
+              onClick={() => searchMovies(searchTerm)}
+            />
           </div>
         </div>
-      
+      </div>
+
       {movies?.length > 0 ? (
         <div className="container">
           {movies.map((movie) => (

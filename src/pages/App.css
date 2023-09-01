@@ -20,7 +20,7 @@ body {
   overflow-x: hidden;
 }
 
-/* #logoSumisso {
+#logoSumisso {
   position: absolute;
   display: flex;
   width: 1920px;
@@ -31,15 +31,15 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 1000;
-  animation: fade-out 2.7s linear forwards;
+  /* z-index: 1000; */
+  animation: fade-out 1s linear forwards;
   background-color: #1c2c35;
-} */
+}
 
-/* #logoSumisso img,
+#logoSumisso img,
 #logoSumisso .outros-itens {
   opacity: 1;
-  transition: opacity 2.3s ease-in;
+  transition: opacity 0.4s ease-in;
   background-color: #1c2c35;
 }
 
@@ -47,7 +47,7 @@ body {
 #logoSumisso.fade-out .outros-itens {
   opacity: 0;
   background-color: #1c2c35;
-} */
+}
 
 #app {
   padding: 4em;
@@ -191,7 +191,7 @@ a:hover {
   }
   .movie {
     width: 100%;
-    margin: 1rem;
+    margin: 1em;
   }
 }
 
