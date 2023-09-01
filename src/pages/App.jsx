@@ -34,7 +34,7 @@ const App = () => {
     <div id="app">
       <div className="menuHead">
         <div className="logo"> 
-          <img src={logo} alt="Logo devflix" />
+          <img src={logo} alt="Logo devflix azul com sombra nas letras" />
           </div>
           <div className="as">
             <a href="">inicio</a>
