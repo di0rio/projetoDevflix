@@ -20,11 +20,32 @@ body {
   overflow-x: hidden;
 }
 
+#logoSumisso {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  animation: fade-out 2s linear forwards;
+  background: #1c2c35;
+}
+
+#logoSumisso img,
+#logoSumisso .outros-itens {
+  opacity: 1;
+  transition: opacity 2s ease-in;
+}
+
+#logoSumisso.fade-out img,
+#logoSumisso.fade-out .outros-itens {
+  opacity: 0;
+}
+
 #app {
   padding: 4em;
   display: flex;
   justify-content: left;
-  align-items: center;
+  align-items: left;
   flex-direction: column;
 }
 
@@ -38,19 +59,18 @@ body {
   flex-shrink: 0;
 }
 
-.as{
-    margin: 0em 2em;
+.as {
+  margin: 0em 2em;
 }
 
 .menuHead {
-    margin: 2em;
-    margin-bottom: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+  margin: 2em;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
 }
-
 
 .menuHead a {
   padding: 1em;
@@ -77,6 +97,7 @@ body {
 
 .search input {
   flex: 1;
+  left: 0;
   border: none;
   padding-right: 1em;
   outline: none;
@@ -90,8 +111,8 @@ body {
 .search img {
   width: 39px;
   height: 39px;
-  cursor: pointer;
   margin-left: 1rem;
+  /* cursor: pointer; */
   /* display: block; */
   /* align-self: center; */
 }
@@ -102,17 +123,17 @@ body {
 }
 
 a {
-transition: 0.3s;
-font-size: 1.1em;
+  transition: 0.3s;
+  font-size: 1.1em;
 }
 
-a:hover{
-    opacity: 0.7;
-    color: #00a3ff;
+a:hover {
+  opacity: 0.7;
+  color: #00a3ff;
 }
 
-.sect{
-    display: flex;
+.sect {
+  display: flex;
 }
 
 .empty {
@@ -164,5 +185,14 @@ a:hover{
   .movie {
     width: 100%;
     margin: 1rem;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
